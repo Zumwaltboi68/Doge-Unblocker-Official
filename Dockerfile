@@ -4,5 +4,6 @@ ENV NODE_ENV=production
 WORKDIR /app
 COPY ["package.json", "package-lock.json*", "./"]
 RUN npm install
+EXPOSE 8080
 COPY . .
-CMD [ "node", "src/index.js" ]
+CMD [ "npm", "start" ]
