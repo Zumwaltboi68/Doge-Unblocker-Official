@@ -34,14 +34,19 @@
     var newTitle = "Apps | Doge";
     
     const storedTitle = localStorage.getItem('tabTitle');  
-    if (storedTitle === "Home | Doge") {
+if (storedTitle === "Home | Doge") {
   localStorage.setItem('tabTitle', newTitle);
 } else if (storedTitle === "Gms | Doge") {
   localStorage.setItem('tabTitle', newTitle);
   document.title = "Gms | Doge";
 } else if (storedTitle === "Apps | Doge") {
   localStorage.setItem('tabTitle', newTitle);
-} else {
+} else if (storedTitle === "Loader | Doge") {
+  localStorage.setItem('tabTitle', newTitle);
+} else if (storedTitle === "404 | Doge") {
+  localStorage.setItem('tabTitle', newTitle);
+}
+else {
   document.title = "My Drive - Google Drive";
 }
 
@@ -121,7 +126,7 @@
     </a>
   </div>
 
-  <script src="/uv/ev.bundle.js"></script>
+  <script src="/uv/uv.bundle.js"></script>
   <script>
     document.getElementById('searchApps').addEventListener('input', function(event) {
       const query = this.value.toLowerCase();

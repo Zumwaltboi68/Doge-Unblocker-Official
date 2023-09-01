@@ -19,14 +19,19 @@
     var newTitle = "Home | Doge";
     
     const storedTitle = localStorage.getItem('tabTitle');  
-    if (storedTitle === "Home | Doge") {
+if (storedTitle === "Home | Doge") {
   localStorage.setItem('tabTitle', newTitle);
 } else if (storedTitle === "Gms | Doge") {
   localStorage.setItem('tabTitle', newTitle);
   document.title = "Gms | Doge";
 } else if (storedTitle === "Apps | Doge") {
   localStorage.setItem('tabTitle', newTitle);
-} else {
+} else if (storedTitle === "Loader | Doge") {
+  localStorage.setItem('tabTitle', newTitle);
+} else if (storedTitle === "404 | Doge") {
+  localStorage.setItem('tabTitle', newTitle);
+}
+else {
   document.title = "My Drive - Google Drive";
 }
 
@@ -102,7 +107,7 @@ if (isLoggedIn === 'correct') {
       <br>
       <form id="searchbar">
         <input type="text" name="url" class="form__input" id="name" tag="searchbar" style="font-family:poppins;font-size:20px;"
-          placeholder="Surf the unblocked web">
+          placeholder="Type URL or search query">
         <p style="font-size:14px;">Right-Click to access more features</p>
       </form>
     </div>
@@ -148,7 +153,7 @@ if (isLoggedIn === 'correct') {
 
       document.getElementById("name").addEventListener("click", setRandomPlaceholder);**/
     </script>
-    <script src="/uv/ev.bundle.js"></script>
+    <script src="/uv/uv.bundle.js"></script>
     <script src="/assets/js/index.js"></script>
     <script src="/uv/uv.bundle.js"></script>
     <script src="/uv/uv.config.js"></script>
